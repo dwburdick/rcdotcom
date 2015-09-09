@@ -1,4 +1,10 @@
-/*  */
+/* images */
+
+img {
+	max-width: 100%;
+}
+
+/* layout */
 
 #container {
 	margin: auto;
@@ -19,7 +25,9 @@
 	margin: 5px;
 }
 
-.clip-image img {
-	max-width:100%;
-	overflow: hidden;
+.contact-info {
+	margin: 5px;
 }
+
+/* type */
+

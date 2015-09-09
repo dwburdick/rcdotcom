@@ -11,17 +11,19 @@
 </head>
 <body>
 	<div id="container" class="mdl-js-layout mdl-grid">
-		<div class="mdl-layout__header-row mdl-cell--12-col">
-			<div class="mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone header-image">Image
-			</div>
-			<div class="mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone header-image">Image
-			</div>
-			<div class="mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone header-image">Image
-			</div>
-			<div class="mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone header-text">Rachel Cernansky
-			</div>
+
+		<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+			<img src="http://placehold.it/1200x400">
 		</div>
-		<div class="mdl-navigation mdl-cell--12-col nav"><ul>
+		<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+			<img src="http://placehold.it/400x400">
+		</div>
+		<div class="mdl-cell mdl-cell--4-col">
+			<div class="header-text">Rachel Cernansky</div>
+			<div class="bio-text">Journalist journalizing journalism</div>
+		</div>
+
+		<div class="mdl-cell mdl-cell--12-col nav"><ul>
 				<li><a href="#clips" class="mdl-navigation__link">Clips</a></li>
 				<li><a href="#bio" class="mdl-navigation__link">Bio</a></li>
 				<li><a href="#map" class="mdl-navigation__link">Map</a></li>
@@ -29,11 +31,47 @@
 		</div>
 		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp clips">
 			<div class="mdl-card--expand clip-image">
+				<img src="images/nature-vegetables.jpg">
+			</div>
+			<div class="mdl-card__title">
+				<a href="http://www.nature.com/news/the-rise-of-africa-s-super-vegetables-1.17712" target="_blank"><h3 class="mdl-card__title-text">The rise of Africa's super vegetables</h3></a>
+				<div class="mdl-card__subtitle">Nature
+				</div>
+			</div>
+
+			<div class="mdl-card__supporting-text">
+				Long overlooked in parts of Africa, indigenous greens are now capturing attention for their nutritional and environmental benefits.
+			</div>
+			<div class="mdl-card__menu">
+				<a href="http://www.nature.com/news/the-rise-of-africa-s-super-vegetables-1.17712" target="_blank"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">call_made</i>
+				</button></a>
+			</div>
+		</div>
+
+		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp clips">
+			<div class="mdl-card--expand clip-image">
 				<img src="http://placehold.it/600x600">
 			</div>
 			<div class="mdl-card__title">
 				<h3 class="mdl-card__title-text">Headline</h3>
-				<h4 class="mdl-card__subtitle-text">Subheadline</h4>
+			</div>
+			<div class="mdl-card__supporting-text">
+				Excerpt copy would look great here, wouldn't it? You'd probably have two sentences. Maybe three.
+			</div>
+			<div class="mdl-card__menu">
+				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">call_made</i>
+				</button>
+			</div>
+		</div>
+
+		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp clips">
+			<div class="mdl-card--expand clip-image">
+				<img src="http://placehold.it/600x600">
+			</div>
+			<div class="mdl-card__title">
+				<h3 class="mdl-card__title-text">Headline</h3>
 			</div>
 			<div class="mdl-card__supporting-text">
 				Excerpt copy would look great here, wouldn't it? You'd probably have two sentences. Maybe three.
@@ -79,24 +117,6 @@
 					<i class="material-icons">call_made</i>
 				</button>
 			</div>
-		</div>	
-
-		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp clips">
-			<div class="mdl-card--expand clip-image">
-				<img src="http://placehold.it/600x600">
-			</div>
-			<div class="mdl-card__title">
-				<h3 class="mdl-card__title-text">Headline</h3>
-				<h4 class="mdl-card__subtitle-text">Subheadline</h4>
-			</div>
-			<div class="mdl-card__supporting-text">
-				Excerpt copy would look great here, wouldn't it? You'd probably have two sentences. Maybe three.
-			</div>
-			<div class="mdl-card__menu">
-				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-					<i class="material-icons">call_made</i>
-				</button>
-			</div>
 		</div>
 
 		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp clips">
@@ -117,23 +137,22 @@
 			</div>
 		</div>
 
-		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp clips">
-			<div class="mdl-card--expand clip-image">
-				<img src="http://placehold.it/600x600">
-			</div>
-			<div class="mdl-card__title">
-				<h3 class="mdl-card__title-text">Headline</h3>
-				<h4 class="mdl-card__subtitle-text">Subheadline</h4>
-			</div>
-			<div class="mdl-card__supporting-text">
-				Excerpt copy would look great here, wouldn't it? You'd probably have two sentences. Maybe three.
-			</div>
-			<div class="mdl-card__menu">
-				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-					<i class="material-icons">call_made</i>
-				</button>
-			</div>
-		</div>				
+		<div class="mdl-cell--8-col" id="map">MAP
+		</div>
+
+		<div class="mdl-cell--4-col mdl-card mdl-shadow--4dp" id="contact">
+				<div class="mdl-card__title">
+					<h3 class="mdl-card__title-text">Contact</h3>
+				</div>
+				<div class="contact-info">
+						<ul>
+								<li class="contact-entry">Twitter</li>
+								<li class="contact-entry">@rachelcernansky</li>
+						</ul>
+				</div>
+		</div>
+
+
 	</div>
 </body>
 </html>
