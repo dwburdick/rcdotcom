@@ -11,6 +11,11 @@ img {
 	max-width: 1200px;
 }
 
+#banner {
+	background-image: url(http://placehold.it/1200x400); 
+	background-size: 100%;
+}
+
 .nav {
 	width: 100%;
 }
