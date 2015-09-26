@@ -14,9 +14,15 @@
 			var data = google.visualization.arrayToDataTable([
 				['Location',   'Value', {role: 'tooltip', p:{html:true}}],
 				['United States', -1, "Home"],
+				['Canada', 1, "Travel"],
 				['Chile', 1, "Honeymooned here with my husband, publicity manager and web developer, Dave"],
-				['Rwanda', 1, "Spent four years here"],
+				['United Kingdom', 1, "Travel"],
+				['Greece', 1, "Travel"],
+				['Rwanda', 0, "Spent four months here"],
+				['Kenya', 0, "Lived here for two years"],
 				['Democratic Republic of the Congo', 1, "OK"],
+				['India', 1, "Reported here."],
+				['Australia', 0, "Studied abroad here"]
 			]);
 
 			var options = {
@@ -160,8 +166,16 @@
 				</button>
 			</div>
 		</div>
-		<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['geochart']}]}"></script>
-		<div class="mdl-cell mdl-shadow--4dp mdl-cell--8-col" id="map-container">
+		<div class="mdl-cell mdl-shadow--4dp mdl-cell--8-col">
+					<div class="mdl-card__title">
+				<h3 class="mdl-card__title-text">Headline</h3>
+				<h4 class="mdl-card__subtitle-text">Subheadline</h4>
+			</div>
+			<div class="mdl-card__supporting-text">
+				Excerpt copy would look great here, wouldn't it? You'd probably have two sentences. Maybe three.
+			</div>
+			<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['geochart']}]}"></script>
+			<div id="map-container"></div>
 		</div>
 
 		<div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp" id="contact">
