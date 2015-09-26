@@ -28,7 +28,6 @@ img {
 
 .contact-info {
 	margin: 5px;
-	height: 400px;
 }
 
 .map-container {
@@ -39,3 +38,8 @@ img {
 
 /* type */
 
+@media (min-width: 800px) {
+	.contact-info {
+		height: 400px;
+	}
+}
