@@ -6,6 +6,33 @@
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+	<script type='text/javascript'>
+		google.setOnLoadCallback(drawRegionsMap);
+		function drawRegionsMap() {
+			var data = google.visualization.arrayToDataTable([
+				['Location',   'Value', {role: 'tooltip', p:{html:true}}],
+				['United States', -1, "Home"],
+				['Chile', 1, "Honeymooned here with my husband, publicity manager and web developer, Dave"],
+				['Rwanda', 1, "Spent four years here"],
+				['Democratic Republic of the Congo', 1, "OK"],
+			]);
+
+			var options = {
+				region: 'world', // Africa
+				colorAxis: {colors: ['#003300', '#00cc99', '#ff3300']},
+				backgroundColor: '#ffffff',
+				datalessRegionColor: '#f8bbd0',
+				defaultColor: '#f5f5f5',
+				legend: 'none',
+			};
+
+			var chart = new google.visualization.GeoChart(document.getElementById('map-container'));
+			chart.draw(data, options);
+		};
+	</script>
+
 	<title>Rachel Cernansky, journalist covering environment, social justice, nutrition and more
 	</title>
 </head>
@@ -133,8 +160,8 @@
 				</button>
 			</div>
 		</div>
-
-		<div class="mdl-cell mdl-cell--8-col" id="map">MAP
+		<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['geochart']}]}"></script>
+		<div class="mdl-cell mdl-shadow--4dp mdl-cell--8-col" id="map-container">
 		</div>
 
 		<div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp" id="contact">
